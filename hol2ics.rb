@@ -26,6 +26,7 @@ class HolEvent
     lendemain=@date+1
     evtString=sprintf("BEGIN:VEVENT\n"+
                       "SUMMARY:%s\n"+
+                      "X-MICROSOFT-CDO-BUSYSTATUS:OOF\n"+
                       "DTSTART;VALUE=DATE:%04d%02d%02d\n"+
                       "DTEND;VALUE=DATE:%04d%02d%02d\n"+
                       "END:VEVENT\n",
